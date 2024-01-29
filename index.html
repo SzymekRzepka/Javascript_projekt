@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz o Logach Samochodów</title>
+</head>
+<body>
+
+<h1>Quiz o Markach Samochodów</h1>
+
+<div>
+    <label for="trudnosc">Wybierz poziom trudności:</label>
+    <select id="trudnosc">
+        <option value="latwy">Łatwy</option>
+        <option value="trudny">Trudny</option>
+    </select>
+</div>
+
+<div>
+    <button class="przycisk" onclick="rozpocznijQuiz()">Rozpocznij quiz</button>
+</div>
+
+<div id="kontenerQuizu" style="display: none;">
+    <img id="logoImage" src="" alt="Logo samochodowe">
+    <div id="opcje"></div>
+    <div id="odpowiedzContainer">
+        <input type="text" id="odpowiedz" placeholder="Wpisz odpowiedź"/>
+    </div>
+    <button class="przycisk" onclick="sprawdzOdpowiedz()">Sprawdź</button>
+    <div id="wynik"></div>
+    <button class="przycisk czerwony" onclick="zakonczQuiz()">Zakończ quiz</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

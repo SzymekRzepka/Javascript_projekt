@@ -1,0 +1,110 @@
+/*
+    Stylizacja globalna
+
+    Stylizoowanie globalne, w tym czcionka, wyrównanie tekstu do środka, margines
+
+    Markup:
+    <html>
+   <body></body>
+   </html>
+
+    Styleguide 1.0
+*/    
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+/*
+    Stylizacja zdjęcia
+    
+    Stylizowanie zdjęcia w tym jego wielkości, margines.
+
+    Markup:
+    <img id="logoImage"/>
+
+    Styleguide 2.0
+*/
+
+#logoImage {
+    max-width: 300px;
+    max-height: 200px;
+    margin: 20px;
+    height: 300px;
+}
+
+/*
+    Stylizacja pojemnika z odpowiedzia
+    
+    Ułożenie pojeminka w kolumnie oraz na środku.
+
+    Markup:
+    <div id="odpowiedzContainer"></div>
+
+    Styleguide 3.0
+*/
+/*
+    Stylizacja odpowiedzi
+    
+    Dodanie marginesu do odpowiedzi
+
+    Markup:
+    <div id="odpowiedzContainer">
+        <input id="odpowiedz"/>
+    </div>
+
+    Styleguide 3.1
+*/
+
+#odpowiedzContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#odpowiedz {
+    margin: 10px;
+}
+
+/*
+    Stylizacja wyniku
+    
+    Dodanie marginesu do wyniku
+
+    Markup:
+    <div id="wynik"></div>
+
+    Styleguide 4.0
+*/
+
+#wynik {
+    margin: 10px;
+}
+
+/*
+    Stylizacja przycisku rozpoczęcia
+    
+    Dodanie marinesów wewnętrznych i zewnętrznych  oraz zmiana kursora na wskaźnik
+
+    Markup:
+    <div id="wynik"></div>
+
+    Styleguide 5.0
+*/
+
+.przycisk {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.zielony {
+    color: green;
+}
+
+.czerwony {
+    color: red;
+}
